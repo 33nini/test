@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Математические методы</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td><img src="./img/лого1.png" width="450x" height="175px"></td>
+                <td>Интернет-курс по диспциплине «Математические методы»</td>
+                <td><div class="container">
+                    <div style="text-align: center;">
+                      <a href="#openModal">Контакты</a>
+                    </div>
+                    <div id="openModal" class="modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title">Контакты преподавателя</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                          </div>
+                          <div class="modal-body">
+                            <img src="./img/Tilda_Icons_15re_man.svg" width="25px" height="25px">Киселева Алена Амазаровна
+                            <br>
+                            <a href="https://vk.com/id489030142"><img src="./img/Tilda_Icons_10cw_mac.svg" width="25px" height="25px"> VK</a>
+                            <br>
+                            <img src="./img/Tilda_Icons_3st_mail.svg" width="25px" height="25px">aaaa@mail.ru
+                            <br>
+                            <img src="./img/Tilda_Icons_2web_phone.svg" width="25px" height="25px">+7 (351) 240-04-40
+                         
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+                      console.log(scrollbar);
+                      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+                        document.body.style.overflow = 'hidden';
+                        document.querySelector('#openModal').style.marginLeft = scrollbar;
+                      });
+                      document.querySelector('[href="#close"]').addEventListener('click', function () {
+                        document.body.style.overflow = 'visible';
+                        document.querySelector('#openModal').style.marginLeft = '0px';
+                      });
+                    });
+                  </script></td>
+            </tr>
+        </table>
+        <hr>
+        <p align=center><b>На данном сайте студентам предоставлен курс обучения по диспциплине «Математические методы». Все темы курса предоставлены в виде четырех разделов. Для получения оценки по окончанию курса студенты должны изучить теоретический материал, выполнить лабораторные работы, а также самостоятельные работы, которые будут прикреплены к теоретическому материалу.</b></p>
+        <hr>
+     
+        <p>1 раздел</p>
+        <ul type="square">
+         <li><a href="./lr.html">Тема 1.1. Введение. Моделирование как метод познания.</a></li>
+         <li><a href="./lr2.html">Тема 1.2. Этапы построения математической модели задачи. Математическое программирование.</a></li>
+        </ul>
+        <p>2 раздел</p>
+        <ul type="square">
+         <li>Тема 2.1. Постановка задачи линейного программирования. Графический метод решения ЗЛП.</li>
+         <li>Тема 2.2. Симплекс метод решения задач линейного программирования.</li>
+         <li>Тема 2.3. Целочисленное программирование.</li>
+         <li>Тема 2.4. Транспортная задача линейного программирования.</li>
+        </ul>
+        <p>3 раздел</p>
+        <ul type="square">
+         <li>Тема 3.1. Технология имитационного моделирования.</li>
+        </ul>
+        <p>4 раздел</p>
+        <ul type="square">
+         <li>Тема 4.1. Понятие прогноза. Количественные методы прогнозирования.</li>
+        </ul>
+     
+ </body>
+</html>
